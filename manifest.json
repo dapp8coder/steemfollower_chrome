@@ -5,7 +5,9 @@
     "version": "0.2.0",
     "description": "Stats About Your Followers",
     "permissions": [
-        "tabs"
+        "tabs",
+        "storage",
+        "declarativeContent"
     ],
     "background": {
         "scripts": ["background.js"]
@@ -17,13 +19,6 @@
             "32": "images/icon32.png",
             "48": "images/icon64.png",
             "128": "images/icon128.png"
-          },
-        "show_matches": ["https://steemit.com/@*", "https://steempeak.com/@*"],
-        "hide_matches": ["https://steemit.com/@*/*", "https://steempeak.com/@*/*"]
-    },
-    "applications": {
-        "gecko": {
-          "id": "Steemfollowers@steemfeed.social"
         }
     }
 }
